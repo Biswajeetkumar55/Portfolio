@@ -63,7 +63,7 @@ body {
   color: var(--second-color);
 }
 .dark-mode{
-  background-color: black;
+  background-color: #071c22;
   color: var(--third-color);
 
 }
@@ -647,7 +647,35 @@ img.man-icons {
   opacity: 1;
 }
 
+/*-----------------*/
 
+.UiPath-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 20rem;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+        .UiPath-title:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: #4356f6;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .UiPath-title:before {
+            top: 0;
+        }
+
+        .UiPath-title:after {
+            bottom: 0;
+        }
 
 
 
