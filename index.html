@@ -4,53 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bishwajeet Kumar – Certified UiPath RPA Developer with 2.8+ years experience in automation, AI, and full-stack development." />
   <link rel="icon" href="./assets/img/h1.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- =====BOX ICONS===== -->
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-  <!--===== SCROLL REVEAL =====-->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <title>Bishwajeet Kumar</title>
+  <title>Bishwajeet Kumar | RPA Developer</title>
 </head>
 
 <body>
-  <!--===== HEADER =====-->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <!-- &#60;&#62; -->
-        <a href="#home" class="nav-logo"><img src="./assets/img/h.png" height="70px" alt="H" /></a>
-      </div>
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="l-header" id="header">
+    <nav class="nav">
+      <a href="#home" class="nav-logo">
+        <img src="./assets/img/h.png" alt="BK" />
+      </a>
 
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#youtube-channel" class="nav-link">YouTube</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Technicals</a></li>
+          <li class="nav-item"><a href="#UiPath-Skill" class="nav-link">UiPath</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           <li class="nav-item">
-            <a href="#home" class="nav-link home active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link about">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link projects">Certifications</a>
-          </li>
-          <li class="nav-item">
-            <a href="#youtube-channel" class="nav-link skills">YouTube</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link skills">Technicals</a>
-          </li>
-          <li class="nav-item">
-            <a href="#UiPath-Skill" class="nav-link contact">UiPath Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" onclick="myFunction()"> <img src="./assets/img/sumoon.png" alt="" height="20px" width="20px"
-                style="background-color: transparent;"> </a>
+            <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+              <img src="./assets/img/sumoon.png" alt="theme" id="themeIcon" />
+            </button>
           </li>
         </ul>
       </div>
@@ -61,503 +46,435 @@
     </nav>
   </header>
 
-  <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid section" id="home">
-      <div class="home-data">
-        <h2 class="home-title">
-          Hi 👋,<br />I am <span class="home-title-color">Bishwajeet Kumar</span><br />
-          <span id="jobTitle">Robotic Process Automation Developer</span>
-        </h2>
+  <main>
+    <!-- ===== HOME ===== -->
+    <section class="home section" id="home">
+      <div class="home-content">
+        <div class="home-data">
+          <span class="home-eyebrow">Available for new challenges</span>
 
-        <a href="contact.html" class="button">Contact me</a>
+          <h1 class="home-title">
+            <span class="home-title-name">Bishwajeet Kumar</span>
+            <span class="home-title-role"><span id="jobTitle">RPA Developer</span></span>
+          </h1>
 
-      </div>
+          <p class="home-description">
+            Certified UiPath Advanced RPA Developer with 4.5+ years of experience automating complex business processes. Building intelligent automation solutions that drive operational efficiency.
+          </p>
 
-      <div class="home-social">
-<!--        <a href="https://www.linkedin.com/in/biswajeetkumar55/" target="_blank" class="home-social-icon"><i-->
-<!--            class="bx bxl-linkedin"></i></a>-->
-<!--        <a href="https://github.com/Biswajeetkumar55" target="_blank" class="home-social-icon"><i-->
-<!--            class="bx bxl-github"></i></a>-->
-      </div>
-
-      <div class="home-img">
-        <img src="assets/img/profile.gif" alt="" />
-      </div>
-    </section>
-
-    <!--===== ABOUT =====-->
-    <section class="about section" id="about">
-      <h2 class="section-title">About</h2>
-
-      <div class="about-container bd-grid">
-        <!--=====<div class="about-img">
-          <img src="assets/img/prakash_jha.JPG" alt="Profile pic" />
-        </div>=====-->
-
-        <div style="text-align: center">
-          <h2 class="about-subtitle">I am Bishwajeet Kumar</h2>
-          <p class="about-text">
-            A Certified UiARD developer with 2.8 years of hands-on experience with UiPath and a foundational understanding of Python, Java programming, I am
-            passionate about leveraging technology to streamline business processes and enhance operational efficiency.
-            My journey in the world of automation has equipped me with a deep understanding of designing, developing,
-            and deploying scalable automation solutions that drive meaningful and cost saving results for organizations.
-            <br />
-
-            Throughout my career, I have successfully implemented a variety of automation projects, demonstrating my
-            ability to adapt and innovate. My expertise includes process analysis, Unattended automation, Attended automation, optimizing
-            workflows to reduce manual effort and increase accuracy. I am committed to continuous learning and staying
-            up-to-date with the latest advancements in RPA and software development to deliver cutting-edge solutions.
-            <br /><br />
-          <div style="text-align: left">
-
-            <p class="about-text">
-              <b>Key highlights of my experience include:</b>
-              <br>
-              <span>&#8226;</span> Designing and deploying end-to-end automation solutions using UiPath Studio<br>
-              <span>&#8226;</span> Collaborating with cross-functional teams to identify and analyze processes suitable for automation<br>
-              <span>&#8226;</span> Creating and managing bots to improve efficiency and productivity<br>
-              <span>&#8226;</span> Troubleshooting and maintaining existing automation systems to ensure seamless operations<br>
-              <span>&#8226;</span> Applying basic Python skills for data manipulation and automation scripting<br>
-            </p>
+          <div class="home-btns">
+            <a href="contact.html" class="button"><span>Get in Touch</span> <i class='bx bx-send'></i></a>
+            <a href="#about" class="button button-ghost"><span>Learn More</span> <i class='bx bx-chevron-down'></i></a>
           </div>
-          </p>
-          <br />
 
-          <p>
-            Drop a mail biswajeetkumar55@gmail.com
-            <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
-          </p>
+          <div class="home-stats">
+            <div class="stat-item">
+              <span class="stat-number">4.5+</span>
+              <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">UiPath Skills</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-img-wrap">
+          <div class="home-img-ring">
+            <img class="home-img" src="assets/img/main_img.jpg" alt="Bishwajeet Kumar" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!--===== Certifications =====-->
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="about-container">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about-grid">
+          <div class="about-intro">
+            <h3 class="about-subtitle">Certified UiPath Advanced RPA Developer</h3>
+            <p class="about-text">
+              RPA Developer with 4.5+ years of experience in designing, developing, and delivering end-to-end automation solutions using UiPath. Skilled in building scalable and efficient robotic process automation workflows that streamline business operations, reduce manual effort, and improve process accuracy. Experienced in automating complex business processes involving web applications, desktop applications, Citrix environments, email automation, APIs, and document processing. 
+            </p>
+            <p class="about-text" style="margin-top: 1rem;">
+             Strong understanding of the complete RPA lifecycle, including process assessment, solution design, development, testing, deployment, and production support. Hands-on experience collaborating with cross-functional teams and business stakeholders to identify automation opportunities and deliver high-quality solutions aligned with business objectives. Passionate about emerging AI-driven automation technologies and continuously expanding expertise in intelligent automation, agentic workflows, and modern enterprise automation practices. Committed to delivering innovative, reliable, and maintainable automation solutions that drive operational excellence and digital transformation.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Designing and deploying end-to-end automation solutions using UiPath Studio</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Collaborating with cross-functional teams to identify processes suitable for automation</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Creating and managing bots to improve efficiency and productivity</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Troubleshooting and maintaining existing automation systems for seamless operations</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Applying Python skills for data manipulation and automation scripting</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-check-circle highlight-icon"></i>
+                <span class="highlight-text">Continuous learning to stay current with the latest RPA advancements</span>
+              </div>
+            </div>
+
+            <div class="about-email">
+              <i class="bx bx-envelope" style="color: var(--accent);"></i>
+              biswajeetkumar55@gmail.com
+              <i class="bx bx-copy" id="copy" title="Copy email"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
     <section class="projects section" id="projects">
-      <h2 class="section-title">Certifications</h2>
+      <h2 class="section-title"><span>Certifications</span></h2>
+
       <div class="project-container">
 
         <div class="project-img">
-          <a href="https://credentials.uipath.com/f448f7ce-38aa-4781-8a6a-271d77bb729f#gs.dzwwi5" target="_blank">
-          <img src="assets/img/uiard.png" alt="shop app" />
-            <span class="hover-text">Click to view digital certificate</span>
-          </a>
-          <p class="project-title">
-            <b>UiPath Advanced Developer</b>
-          </p>
-          <p class="project-subtitle">
-            The UiARD (UiPath Advanced RPA Developer) Certification is a professional credential offered by UiPath that validates an individual's expertise in designing and developing complex Robotic Process Automation (RPA) solutions using UiPath software.
-            This certification is intended for advanced RPA developers who possess a deep understanding of automation concepts,
-            including advanced debugging, error handling, and the ability to create scalable,
-            maintainable RPA workflows. Earning this certification demonstrates a high level of proficiency in automating business processes and making significant contributions to enterprise-level automation projects.</p>
+          <div class="project-img-wrapper">
+            <a href="https://credentials.uipath.com/f448f7ce-38aa-4781-8a6a-271d77bb729f#gs.dzwwi5" target="_blank">
+              <img src="assets/img/uiard.png" alt="UiPath Advanced Developer" />
+              <span class="hover-text">↗ View Digital Certificate</span>
+            </a>
+          </div>
+          <div class="project-body">
+            <span class="cert-badge"><i class="bx bx-award"></i> UiPath Certified</span>
+            <h3 class="project-title">UiPath Advanced Developer</h3>
+            <p class="project-subtitle">The UiPath Certified Advanced RPA Developer (UiARD) is expected to have a proven understanding and extensive hands-on experience with UiPath technologies such as Studio, Robots, and Orchestrator and the ability to independently build or lead production level automations in the Robotic Enterprise Framework. UiPath Advanced RPA Developer Certification is targeted to assess a deeper level of knowledge and skills for designing and independently developing complex RPA solutions in the Robotic Enterprise Framework. UiARD is a credential that represents a deeper level of expertise for roles such as Advanced RPA Developers, Solution Architects, RPA Architects, and others.</p>
+          </div>
         </div>
+
         <div class="project-img">
-          <a href="https://success.simplilearn.com/d870248f-f892-4fa7-9a51-731bba9b809f#gs.dzwy8z" target="_blank">
-            <img src="assets/img/fsd.png" alt="shop app" />
-            <span class="hover-text">Click to view digital certificate</span>
-          </a>
-          <p class="project-title">
-            <b>Full Stack Java Developer</b>
-          </p>
-          <p class="project-subtitle">
-
-            The Full Stack Java Developer program by Simplilearn is a comprehensive training course designed to equip learners with the skills needed to build dynamic and responsive web applications. The program covers a wide range of technologies,
-            including front-end development with HTML, CSS, and JavaScript, back-end development with Java, Spring Boot, and RESTful APIs, and database management with SQL and Hibernate. Participants also gain experience with tools like Git, Maven, and Jenkins.
-            The course is ideal for those looking to pursue a career in full-stack development, providing hands-on projects and real-world scenarios to build proficiency.
-          </p>
-
+          <div class="project-img-wrapper">
+            <a href="https://credentials.uipath.com/1ac352a4-77f8-49c0-b3f3-71f964435ab0#acc.hoQudOZf" target="_blank">
+              <img src="assets/img/uiadp.png" alt="UiPath Agentic AI Associate" />
+              <span class="hover-text">↗ View Digital Certificate</span>
+            </a>
+          </div>
+          <div class="project-body">
+            <span class="cert-badge"><i class="bx bx-award"></i> UiPath Certified</span>
+            <h3 class="project-title">UiPath Certified Professional Automation Developer Professional Certification</h3>
+            <p class="project-subtitle">The UiPath Certified Professional Automation Developer Professional Certification is expected to have a proven understanding and extensive hands-on experience with UiPath technologies such as Studio, Robots, and Orchestrator and the ability to independently build or lead production level automations in the Robotic Enterprise Framework. This is a credential that represents a deeper level of expertise for roles such as Advanced Automation Developers, Solution Architects, Automation Architects, and others.</p>
+          </div>
         </div>
+
         <div class="project-img">
-          <a href="https://credentials.uipath.com/485288ee-74c2-4fe3-875d-be5a0764f2cb#acc.nVs7hjeO" target="_blank">
-            <img src="assets/img/uisaa.png" alt="shop app" />
-            <span class="hover-text">Click to view digital certificate</span>
-          </a>
-          <p class="project-title">
-            <b>UiPath Certified Professional Specialized AI Associate Certification</b>
-          </p>
-          <p class="project-subtitle">
-
-            The Specialized AI Associate is expected to have an essential understanding of UiPath’s Specialized AI solutions, such as Document Understanding, Communication Mining, and AI Center as well as automation development using Studio, Orchestrator, and Robot. This certification represents the ability to describe the technology landscape of AI and process automation and articulate how businesses can benefit from these technologies.
-            The specialized AI Associate certification is designed for individuals in technical roles who have some experience with Document Understanding and Communication Mining and is a first step towards building advanced competencies in process automation and intelligent document processing (IDP).
-          </p>
-
+          <div class="project-img-wrapper">
+            <a href="https://credentials.uipath.com/485288ee-74c2-4fe3-875d-be5a0764f2cb#acc.nVs7hjeO" target="_blank">
+              <img src="assets/img/uisaa.png" alt="UiPath AI Associate" />
+              <span class="hover-text">↗ View Digital Certificate</span>
+            </a>
+          </div>
+          <div class="project-body">
+            <span class="cert-badge"><i class="bx bx-award"></i> UiPath Certified</span>
+            <h3 class="project-title">UiPath Specialized AI Associate</h3>
+            <p class="project-subtitle">The Specialized AI Associate is expected to have an essential understanding of UiPath’s Specialized AI solutions, such as Document Understanding, Communication Mining, and AI Center as well as automation development using Studio, Orchestrator, and Robot. This certification represents the ability to describe the technology landscape of AI and process automation and articulate how businesses can benefit from these technologies.
+The specialized AI Associate certification is designed for individuals in technical roles who have some experience with Document Understanding and Communication Mining and is a first step towards building advanced competencies in process automation and intelligent document processing (IDP)</p>
+          </div>
         </div>
 
+        <div class="project-img">
+          <div class="project-img-wrapper">
+            <a href="https://credentials.uipath.com/42078bc3-c1f1-482e-85ff-8621a9ff6e57#acc.5vApByTw" target="_blank">
+              <img src="assets/img/uiaaa.png" alt="Full Stack Java Developer" />
+              <span class="hover-text">↗ View Digital Certificate</span>
+            </a>
+          </div>
+          <div class="project-body">
+            <span class="cert-badge"><i class="bx bx-award"></i> UiPath Certified</span>
+            <h3 class="project-title">UiPath Certified Professional Agentic Automation Associate Certification</h3>
+            <p class="project-subtitle">UiPath Certified Professional Agentic Automation Associate certification validates foundational skills for collaborating with AI agents in process automation. It is well suited for individuals in both technical and non-technical roles, such as Citizen Developers, Business Analysts, Automation Developers, Solution Architects, and anyone looking to harness AI agents to enhance decision-making, streamline complex processes, and drive innovation in their work.</p>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <div class="project-img-wrapper">
+            <a href="https://success.simplilearn.com/d870248f-f892-4fa7-9a51-731bba9b809f#gs.dzwy8z" target="_blank">
+              <img src="assets/img/fsd.png" alt="Full Stack Java Developer" />
+              <span class="hover-text">↗ View Digital Certificate</span>
+            </a>
+          </div>
+          <div class="project-body">
+            <span class="cert-badge"><i class="bx bx-award"></i> Simplilearn</span>
+            <h3 class="project-title">Full Stack Java Developer</h3>
+            <p class="project-subtitle">Comprehensive training covering front-end development with HTML, CSS, JavaScript; back-end with Java, Spring Boot, RESTful APIs; and database management with SQL and Hibernate. Includes Git, Maven, and Jenkins tooling.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!--==========Youtube==========-->
-    <section id="youtube-channel" style="background-color: #0e2431; padding: 60px 20px; text-align: center; color: #fff; font-family: 'Poppins', sans-serif;">
-      <h2 class ="UiPath-title" style="font-size: 2.25rem; margin-bottom: 2rem; color: #4070f4; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
-        YouTube Channel: Automate With Ease
-      </h2>
+    <!-- ===== YOUTUBE ===== -->
+    <section class="youtube-section section" id="youtube-channel">
+      <div class="youtube-inner">
+        <span class="yt-tag"><i class="bx bxl-youtube"></i> YouTube Channel</span>
+        <h2 class="youtube-title">Automate With Ease</h2>
+        <p class="youtube-desc">
+          Expert tutorials on UiPath and RPA development — from beginner basics to advanced automation techniques, explained in Hindi. Whether you're starting out or leveling up, there's something here for you.
+        </p>
 
-      <p class="about-text" style="font-size: 1.2rem; color: #dcdcdc; max-width: 850px; margin: 0 auto; line-height: 1.8; font-weight: 300;">
-        Discover basics and expert tutorials with valuable insights on learning and becoming an RPA developer. Whether you're a beginner or an advanced user, my channel has something for everyone who is looking to enhance their RPA skills focusing on tips and tricks explained in HINDI.
-      </p>
+        <div class="video-frame" id="ytContainer" onclick="loadYTVideo(this)">
+          <img
+            src="https://img.youtube.com/vi/DPMbmAIxEDg/maxresdefault.jpg"
+            alt="Automate With Ease – UiPath Tutorial"
+            class="yt-thumb"
+            onerror=this.src="https://youtu.be/DPMbmAIxEDg?si=jfctv0qDVPaZNMXR"
+          />
+          <div class="yt-play-btn" aria-label="Play video">
+            <svg viewBox="0 0 68 48" width="68" height="48">
+              <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#ff0000"/>
+              <path d="M45 24 27 14v20" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="yt-thumb-label">Click to play · <strong>Automate With Ease</strong></div>
+        </div>
 
-      <div style="margin: 40px auto; max-width: 900px; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); border-radius: 10px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <iframe class="youtube-video" width="100%" height="450" src="https://www.youtube.com/embed/DPMbmAIxEDg?si=jOv5P-DWWLI4oz6x"
-                title="YouTube video player" frameborder="0" style="border-radius: 10px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="yt-features">
+          <div class="yt-feature-item">
+            <div class="yt-feature-dot"></div>
+            <div class="yt-feature-content">
+              <strong>UiPath Studio Tutorials</strong>
+              <span>Comprehensive guides to building automation workflows</span>
+            </div>
+          </div>
+          <div class="yt-feature-item">
+            <div class="yt-feature-dot"></div>
+            <div class="yt-feature-content">
+              <strong>Logic Building Tips</strong>
+              <span>Optimizing automation logic with best practices</span>
+            </div>
+          </div>
+          <div class="yt-feature-item">
+            <div class="yt-feature-dot"></div>
+            <div class="yt-feature-content">
+              <strong>Real-World Use Cases</strong>
+              <span>Demonstrating UiPath in business automation</span>
+            </div>
+          </div>
+          <div class="yt-feature-item">
+            <div class="yt-feature-dot"></div>
+            <div class="yt-feature-content">
+              <strong>Automation Insights</strong>
+              <span>Latest RPA trends and developments</span>
+            </div>
+          </div>
+        </div>
+
+        <a class="yt-cta" href="https://www.youtube.com/@AutomateWithEase" target="_blank">
+          <i class="bx bxl-youtube" style="font-size: 1.3rem;"></i>
+          Visit Channel
+        </a>
       </div>
+    </section>
 
-      <div style="max-width: 850px; margin: 0 auto;">
-        <h3 style="color: #f1c40f; margin-bottom: 20px; font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
-          Featured Content
-        </h3>
-        <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; line-height: 2; text-align: left;">
-          <li class="skills-data" style="padding: 10px; color: #fff; background-color: #2c2c44; margin-bottom: 10px; border-radius: 5px;">
-            <strong class="skills-names" >UiPath Studio Tutorials:</strong> Comprehensive guides to building automation workflows.
-          </li>
-          <li class="skills-data" style="padding: 10px; color: #fff; background-color: #2c2c44; margin-bottom: 10px; border-radius: 5px;">
-            <strong class="skills-names" >Logic Building Tips & Tricks:</strong> Optimizing automation logic with best practices.
-          </li>
-          <li class="skills-data" style="padding: 10px; color: #fff; background-color: #2c2c44; margin-bottom: 10px; border-radius: 5px;">
-            <strong class="skills-names" >Real-World Use Cases:</strong> Demonstrating how to apply UiPath in business automation.
-          </li>
-          <li class="skills-data" style="padding: 10px; color: #fff; background-color: #2c2c44; margin-bottom: 10px; border-radius: 5px;">
-            <strong class="skills-names" >Automation Insights:</strong> Stay updated on the latest RPA trends and developments.
-          </li>
-        </ul>
+    <!-- ===== TECHNICALS ===== -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Technical <span>Stack</span></h2>
+
+      <div class="skills-container">
+        <div class="skills-data">
+          <img class="skills-icon" src="assets/img/uipath_logo.jpg" alt="UiPath" />
+          <span class="skills-name">UiPath</span>
+        </div>
+        <div class="skills-data">
+          <img class="skills-icon" src="assets/img/python.png" alt="Python" />
+          <span class="skills-name">Python</span>
+        </div>
+        <div class="skills-data">
+          <img class="skills-icon" src="assets/img/java.png" alt="Java" />
+          <span class="skills-name">Java</span>
+        </div>
+        <div class="skills-data">
+          <i class="bx bxl-html5 skills-icon" style="color: #e44d26;"></i>
+          <span class="skills-name">HTML5</span>
+        </div>
+        <div class="skills-data">
+          <i class="bx bxl-css3 skills-icon" style="color: #264de4;"></i>
+          <span class="skills-name">CSS3</span>
+        </div>
+        <div class="skills-data">
+          <img class="skills-icon" src="assets/img/MySQL-Logo.png" alt="MySQL" />
+          <span class="skills-name">MySQL</span>
+        </div>
+        <div class="skills-data">
+          <img class="skills-icon" src="./assets/img/github.svg" alt="GitHub" />
+          <span class="skills-name">GitHub</span>
+        </div>
+        <div class="skills-data">
+          <img class="skills-icon" src="./assets/img/git.png" alt="Git" />
+          <span class="skills-name">Git</span>
+        </div>
       </div>
+    </section>
 
-      <div style="margin-top: 30px;">
-        <a class="you-button" href="https://www.youtube.com/@AutomateWithEase" target="_blank"
-           style="display: inline-block; background-color: #e74c3c; color: #fff; padding: 15px 40px; text-decoration: none; font-size: 1.3rem; border-radius: 8px; box-shadow: 0px 5px 10px rgba(231, 76, 60, 0.5); transition: transform 0.3s, box-shadow 0.5s; ">
-          Visit My YouTube Channel
+    <!-- ===== UIPATH SKILLS ===== -->
+    <section class="uipath-section section" id="UiPath-Skill">
+      <div class="uipath-inner">
+        <h2 class="section-title">UiPath <span>Expertise</span></h2>
+
+        <div class="uipath-grid">
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🤖</span>
+            <h3 class="uipath-card-title">Studio</h3>
+            <p class="uipath-card-text">Expert in UiPath Studio for building RPA workflows and automating processes with efficiency and scalability.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🔗</span>
+            <h3 class="uipath-card-title">LINQ</h3>
+            <p class="uipath-card-text">Integrating LINQ with data tables, lists, and arrays to perform complex data operations and transformations.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🌐</span>
+            <h3 class="uipath-card-title">API Integration</h3>
+            <p class="uipath-card-text">Integrating third-party APIs and web services into UiPath automation workflows seamlessly.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">📊</span>
+            <h3 class="uipath-card-title">Data Extraction</h3>
+            <p class="uipath-card-text">Extracting, transforming, and manipulating data from Excel, databases, PDFs, and websites.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">📄</span>
+            <h3 class="uipath-card-title">Document Understanding</h3>
+            <p class="uipath-card-text">Implementing UiPath's Document Understanding framework for processing structured and unstructured documents.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🛡️</span>
+            <h3 class="uipath-card-title">Exception Handling</h3>
+            <p class="uipath-card-text">Implementing robust exception handling with try-catch mechanisms, retries, and logging frameworks to ensure resilient bots.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🗄️</span>
+            <h3 class="uipath-card-title">Database Activities</h3>
+            <p class="uipath-card-text">Performing CRUD operations using queries, stored procedures, and transactions within automation workflows.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">⚙️</span>
+            <h3 class="uipath-card-title">ReFramework</h3>
+            <p class="uipath-card-text">Configuring ReFramework for transactional processing, enhanced exception handling, and enterprise-grade automation.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">📱</span>
+            <h3 class="uipath-card-title">UiPath Apps</h3>
+            <p class="uipath-card-text">Building interactive UiPath Apps as front-end interfaces for robots, enabling human-robot collaboration.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🖥️</span>
+            <h3 class="uipath-card-title">UI Automation</h3>
+            <p class="uipath-card-text">Implementing dynamic selectors and handling complex web tables, dynamic pop-ups for robust automation solutions.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">📸</span>
+            <h3 class="uipath-card-title">Task Capture</h3>
+            <p class="uipath-card-text">Creating detailed process documentation and visual workflows from recorded user actions using UiPath Task Capture.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🖱️</span>
+            <h3 class="uipath-card-title">Citrix Automation</h3>
+            <p class="uipath-card-text">AI Computer Vision for improved automation in virtual desktop environments and Citrix infrastructure.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🔄</span>
+            <h3 class="uipath-card-title">Version Control</h3>
+            <p class="uipath-card-text">Efficient Git usage for collaboration — managing code versions, branches, pull requests, and conflict resolution.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">📧</span>
+            <h3 class="uipath-card-title">Email Automation</h3>
+            <p class="uipath-card-text">Proficiency in UiPath's Mail activities (Outlook, SMTP, IMAP, POP3) for automating email communication tasks.</p>
+          </div>
+          <div class="uipath-card">
+            <span class="uipath-card-icon">🔍</span>
+            <h3 class="uipath-card-title">Debugging & Troubleshooting</h3>
+            <p class="uipath-card-text">Analyzing logs, using breakpoints, stepping through code, and monitoring variables with Locals and Immediate panels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="education section" id="education">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="education-container">
+        <div class="education-data">
+          <img class="edu-logo" src="assets/img/deloitte.jpeg" alt="AIEMD" />
+          <div class="edu-info">
+            <span class="education-name">Software Engineer I</span>
+            <span class="education-platform">Deloitte USI, Hyderabad</span>
+            <span class="education-duration">2025 - Current</span>
+          </div>
+        </div>
+
+        <div class="education-data">
+          <img class="edu-logo" src="assets/img/anzalogo.jpg" alt="BCP" />
+          <div class="edu-info">
+            <span class="education-name">Senior RPA developer</span>
+            <span class="education-platform">Anza business Services, Bangalore</span>
+            <span class="education-duration">2022 – 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer section" id="contact">
+    <div class="footer-inner">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <p class="footer-title">Bishwajeet Kumar</p>
+      <p class="footer-sub">Open to new opportunities and collaborations</p>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/biswajeetkumar55/" target="_blank" class="footer-icon">
+          <i class="bx bxl-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.youtube.com/@AutomateWithEase" target="_blank" class="footer-icon">
+          <i class="bx bxl-youtube"></i>
+          <span>YouTube</span>
+        </a>
+        <a href="mailto:biswajeetkumar55@gmail.com" target="_blank" class="footer-icon">
+          <i class="bx bx-mail-send"></i>
+          <span>Email</span>
+        </a>
+        <a href="tel:+917903664040" target="_blank" class="footer-icon">
+          <i class="bx bx-phone"></i>
+          <span>Phone</span>
+        </a>
+        <a href="https://github.com/Biswajeetkumar55" target="_blank" class="footer-icon">
+          <i class="bx bxl-github"></i>
+          <span>GitHub</span>
         </a>
       </div>
 
-      <div style="margin-top: 20px;">
-        <p style="color: #999; font-size: 1rem;">Stay updated with the latest UiPath tutorials and automation tips!</p>
-      </div>
-    </section>
-
-
-      <!--===== Technicals =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Technicals</h2>
-
-        <div>
-        <div class="skills-container bd-grid">
-          <div>
-            <!-- <h2 class="skills-subtitle">Front-end Skills</h2> -->
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="assets/img/uipath_logo.jpg" alt="" />
-                <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-                <span class="skills-name">UiPath</span>
-              </div>
-              <!-- <div class="skills-bar skills-html"></div>
-             <div>
-                <span class="skills-percentage">75%</span>
-              </div>  -->
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="assets/img/python.png" alt="" />
-                <!-- <i class="bx bxl-css3 skills-icon"></i> -->
-                <span class="skills-name">Python</span>
-              </div>
-              <!-- <div class="skills-bar skills-css"></div>  -->
-              <!-- <div>
-                <span class="skills-percentage">70%</span>
-              </div>  -->
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="assets/img/java.png" alt="" />
-                <span class="skills-name">Java</span>
-              </div>
-              <div>
-              </div>
-
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <i class="bx bxl-html5 skills-icon"></i>
-                <span class="skills-name">HTML5</span>
-              </div>
-
-
-          </div>
-          </div>
-          <div>
-
-            <div class="skills-data">
-              <div class="skills-names">
-                <i class="bx bxl-css3 skills-icon"></i>
-                <span class="skills-name">CSS</span>
-              </div>
-              <!-- <div class="skills-bar skills-css"></div> -->
-              <div>
-                <!-- <span class="skills-percentage">70%</span> -->
-              </div>
-            </div>
-
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="assets/img/MySQL-Logo.png" alt="" />
-                <span class="skills-name">MYSQL</span>
-              </div>
-              <!-- <div class="skills-bar skills-css"></div>  -->
-              <div>
-                <!-- <span class="skills-percentage">70%</span> -->
-              </div>
-            </div>
-            <div>
-              <!-- <h2 class="skills-subtitle">TOOLS</h2> -->
-              <div class="skills-data">
-                <div class="skills-names">
-                  <img class="skills-icon" src="./assets/img/github.svg" alt="" />
-                  <span class="skills-name">Github</span>
-                </div>
-              </div>
-              <div class="skills-data">
-                <div class="skills-names">
-                  <img class="skills-icon" src="./assets/img/git.png" alt="" />
-                  <span class="skills-name">Git</span>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-      </section>
-
-        <!---==========UiPath skills=========--->
-
-    <section id="UiPath-Skill" style="background-color: #f4f4f9; padding: 80px 20px; text-align: center; font-family: 'sans-serif', sans-serif;">
-      <h2 class="UiPath-title" style="font-size: 1.9rem; margin-bottom: 40px; color: #4356f6; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">
-        <b>UiPath Skills</b>
-      </h2>
-
-      <div class="skills-data" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto;">
-
-        <!-- Skill 1 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #e67e22; font-size: 2rem; margin-bottom: 15px;">Studio</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Expert in UiPath Studio for building RPA workflows and automating processes with efficiency.</p>
-        </div>
-
-        <!-- Skill 2 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #3498db; font-size: 2rem; margin-bottom: 15px;">LINQ</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Integrating LINQ with data tables, lists, and arrays to perform complex data operations and transformations.</p>
-        </div>
-
-        <!-- Skill 3 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #2ecc71; font-size: 2rem; margin-bottom: 15px;">API Integration</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Integrating third-party APIs and web services into UiPath automation workflows.</p>
-        </div>
-
-        <!-- Skill 4 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #d1d624; font-size: 2rem; margin-bottom: 15px;">Data Extraction</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Expertise in extracting, transforming, and manipulating data from various sources (Excel, databases, PDFs, websites).</p>
-        </div>
-
-        <!-- Skill 5 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #19df91; font-size: 1.5rem; margin-bottom: 15px;">Document Understanding</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Implementing UiPath’s Document Understanding framework for processing structured and unstructured documents.</p>
-        </div>
-        <!-- Skill 6 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #656767; font-size: 1.5rem; margin-bottom: 15px;">Exception Handling</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Implementing robust exception handling strategies to ensure bots are resilient and can recover from errors, Using try-catch mechanisms, retries, and logging frameworks.
-          </p>
-        </div>
-        <!-- Skill 7 -->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #1be0dd; font-size: 1.8rem; margin-bottom: 15px;">Database Activities</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Performing CRUD (Create, Read, Update, Delete) operations using queries, stored procedures, and transactions within automation workflows.
-          </p>
-        </div>
-        <!-- Skill 8-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #965d24; font-size: 1.5rem; margin-bottom: 15px;">ReFramework Expertise</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Configuring ReFramework for transactional processing, enhanced exception handling, retry mechanisms, and logging to ensure enterprise-grade automation solutions.
-          </p>
-        </div>
-        <!-- Skill 9-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #0e4583; font-size: 1.8rem; margin-bottom: 15px;">UiPath Apps</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Building interactive UiPath Apps that serve as front-end interfaces for robots, enabling human-robot collaboration.
-          </p>
-        </div>
-        <!-- Skill 10-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #ac068b; font-size: 1.8rem; margin-bottom: 15px;">UI Automation</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Implementing dynamic selectors and handling various UI elements (e.g., complex web tables, dynamic pop-ups) to build robust and reliable automation solutions.
-          </p>
-        </div>
-        <!-- Skill 11-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #d82747; font-size: 1.8rem; margin-bottom: 15px;">Task Capture</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Creating detailed process documentation and visual workflows from recorded user actions using UiPath Task Capture to document and analyze business processes.
-          </p>
-        </div>
-        <!-- Skill 12-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #98a237; font-size: 2rem; margin-bottom: 15px;">Citrix Automation</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">AI Computer Vision: Familiarity with UiPath’s AI Computer Vision activities for improved automation in virtual desktop environments.
-          </p>
-        </div>
-        <!-- Skill 13-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #7f13e5; font-size: 2rem; margin-bottom: 15px;">Version control</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">I efficiently use Git for collaboration by managing code versions, creating and merging branches, conducting code reviews through pull requests, and resolving conflicts. My skills ensure smooth teamwork and effective version control in development projects.
-          </p>
-        </div>
-        <!-- Skill 14-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #6fe199; font-size: 2rem; margin-bottom: 15px;">Email Automation</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Proficiency in UiPath’s Mail activities (Outlook, SMTP, IMAP, and POP3) to automate sending, receiving, and processing emails, Experience using UiPath Orchestrator to schedule and manage automated email communication tasks.
-          </p>
-        </div>
-        <!-- Skill 15-->
-        <div style="padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <h3 style="color: #00bdf9; font-size: 2rem; margin-bottom: 15px;">Debugging and Troubleshooting</h3>
-          <p style="color: #7f8c8d; font-size: 1rem; line-height: 1.6;">Ability to analyze logs and track down issues within the automation, I specialize in debugging UiPath workflows by using breakpoints, stepping through code, and monitoring variables with the Locals and Immediate panels.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hover Effect and Grid Styling -->
-    <style>
-  #UiPath-Skill div:hover {
-    transform: scale(1.05);
-  }
-
-  #UiPath-Skill h2 {
-    color: #34495e;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  #UiPath-Skill h3 {
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-  }
-
-  #UiPath-Skill div:hover h3 {
-    color: #16a085;
-  }
-
-  #UiPath-Skill p {
-    color: #7f8c8d;
-    margin-bottom: 0;
-  }
-
-  /* Grid container styling */
-  #UiPath-Skill div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  /* Responsive media query */
-  @media (max-width: 768px) {
-    #UiPath-Skill {
-      grid-template-columns: 1fr;
-    }
-  }
-
-    .youtube-video:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
-  }
-    .you-button:hover {
-    transform: scale(1.1);
-    color: 0px 5px 10px aqua;
-  }
-</style>
-
-    <!---========Education ======--->
-    <section class="education section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="education-container bd-grid">
-
-      </div>
-      <div class="education-container bd-grid">
-
-        <div class="education-data">
-          <div class="education-names">
-            <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-            <b><span class="education-name" style="font-size: 30px">B.Tech</span></b>
-            <img class="skills-icon" src="assets/img/AIEMD.png" alt="" style="width: 50px; height: 50px;"/>
-            <p class="education-platform " style="font-size: 20px">Aryabhatta Institute of Engineering & Management Durgapur</p>
-            <p class="education-duration " style="font-size: 20px">2018 - 2021</p>
-
-          </div>-
-        </div>
-        <div class="education-data">
-          <div class="education-names">
-            <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-            <b><span class="education-name" style="font-size: 30px">Diploma</span></b>
-            <img class="skills-icon" src="assets/img/bcp.png" alt="" style="width: 50px; height: 50px;"/>
-            <p class="education-platform " style="font-size: 20px">Bengal College Of Polytechnic Durgapur</p>
-            <p class="education-duration " style="font-size: 20px">2015 - 2018</p>
-
-          </div>
-        </div>
-      </div>
-
-<!--<div>-->
-<!--          <div class="project-img">-->
-<!--            <img src="assets/img/shutterstock_684313486.jpg" alt="shop app" />-->
-<!--            <p class="project-title">-->
-<!--              Social Media Management-->
-<!--            </p>-->
-<!--            <p class="project-subtitle">-->
-<!--              Our Social Media Management service boosts your online presence by creating and curating engaging content, managing interactions, and analyzing performance metrics. We craft tailored strategies to enhance brand visibility, drive engagement, and grow your audience across various platforms. Let us handle your social media while you focus on your core business.</p>-->
-<!--          </div>-->
-<!--          <div class="project-img">-->
-<!--            <img src="assets/img/paid-ads-520798916 (1).jpg" alt="shop app" />-->
-<!--            <p class="project-title">-->
-<!--              Paid Advertising-->
-<!--            </p>-->
-<!--            <p class="project-subtitle">-->
-
-<!--              Our paid advertising services drive targeted traffic to your business using strategic ad placements across various platforms. We optimize campaigns for maximum ROI through precise targeting, creative ad design, and data-driven adjustments, ensuring you reach your ideal audience efficiently and effectively.-->
-<!--            </p>-->
-
-<!--          </div>-->
-<!--</div>-->
-
-  </main>
-
-  <!--===== FOOTER + CONTACT=====-->
-
-  <footer class="footer section" id="contact">
-    <h2 class="section-title">Get in Touch</h2>
-    <p class="footer-title">Bishwajeet Kumar</p>
-    <div class="footer-social">
-      <a href="https://www.linkedin.com/in/biswajeetkumar55/" target="_blank" class="footer-icon"><i class="bx bxl-linkedin">
-          <br />
-          LinkedIn</i></a>
-      <a href="https://www.youtube.com/@AutomateWithEase" target="_blank" class="footer-icon"><i class="bx bxl-youtube">
-          <br />
-          YouTube</i></a>
-      <a href="mailto:biswajeetkumar55@gmail.com" target="_blank" class="footer-icon"><i class="bx bx-mail-send">
-          <br />
-          E-mail</i></a>
-      <a href="tel:+91 7903664040" target="_blank" class="footer-icon"><i class="bx bx-phone">
-          <br />
-          Phone</i></a>
-      <a href="https://github.com/Biswajeetkumar55" target="_blank" class="footer-icon"><i class="bx bxl-github">
-          <br />
-          GitHub
-        </i></a>
+      <p class="footer-copy">© 2026 — Bishwajeet Kumar. All rights reserved.</p>
     </div>
-    <p>&#169; 2024 copyright all right reserved (Tech4Bytes By Bishwajeet Kumar)</p>
   </footer>
 
-  <!--===== MAIN JS =====-->
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
